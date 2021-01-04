@@ -2,7 +2,7 @@
 
 This is a library of OpenSCAD conversion of the models from the original 1984 Elite.
 
-Coordinates extracted from the outstanding bbcelite.com BBC Micro Elite disassembly project.
+Coordinates extracted from the outstanding [BBC Micro Elite disassembly project](https://bbcelite.com/).
 
 Rebuilt for OpenSCAD by Einar Lielmanis, einars@spicausis.lv.
 
