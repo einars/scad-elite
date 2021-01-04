@@ -1,0 +1,22 @@
+#!/bin/sh
+
+output=elite.gif
+
+set -e
+
+rm -rf out
+mkdir out
+
+frame=0
+
+echo -n Animating...
+for t in $(seq 0.0 0.01 1.0); do
+  echo -n .
+  openscad --imgsize 800,600 -D\$t=$t --colorscheme='Tomorrow Night' --camera=362,200,290,180,0,0,3200 ../elite.scad -o $(printf 'out/ani_%04d.png' $frame) 2> /dev/null
+  frame=$((frame + 1))
+done
+
+echo Ok
+echo -n Creating $output...
+gm convert -delay 3 -loop 0 out/*.png $output
+echo Ok
