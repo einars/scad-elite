@@ -20,3 +20,4 @@ The dimensions are left intact from the original. You may adjust `width` (or
 - elite_thargon (width=76, center=false)
 - elite_python (width=192, center=false)
 
+![Models of scad-elite](scripts/elite.gif?raw=true)
